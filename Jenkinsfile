@@ -1,10 +1,10 @@
 pipeline {
-    agrnt any;
+    agent any;
     stages {
         stage('Set Up') {
-            CleanWs();
+          
             steps {
-                CleanWs();
+                cleanWs();
                 sh 'echo setting up my workspace'
             }
         }
